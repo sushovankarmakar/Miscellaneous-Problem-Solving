@@ -1,6 +1,9 @@
 import java.io.*;
 import java.util.*;
 
+// https://leetcode.com/problems/linked-list-components/
+// solved in a hackerrank contest (24.06.2020)
+
 class ListNode {
     public int val;
     public ListNode next;
