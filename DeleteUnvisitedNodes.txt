@@ -1,0 +1,36 @@
+You are given a linked list and you visit the nodes in the following manner -
+
+When you are at a node you visit the Kth node after that, where K is the value of that node.
+If there are less than K nodes after a particular node then you reach NULL.
+You stop when you reach NULL.
+Initially, you are at the head.
+You have to delete all the unvisited nodes in the linked list.
+
+Input Format
+
+First-line contains N, the number of nodes in the linked list. Second line contains N space separated integers, the value of the ith node in the linked list.
+
+Constraints
+
+Output Format
+
+Print the linked list after deleting all the unvisited nodes.
+
+Sample Input 0
+
+6
+1 2 3 1 2 3
+Sample Output 0
+
+1 2 1 2 
+Explanation 0
+
+Initially, you are at the head (Node with value 1). So you move to the 1st node after that, which is the node with value 2.
+
+From node 2 you visit the 2nd node after that which is the node with value 1.
+
+In a similar way, you go to the second last node (value 2).
+
+From there since there are less than 2 nodes you reach NULL and stop.
+
+So, the visited nodes are 1, 2, 1 and 2.

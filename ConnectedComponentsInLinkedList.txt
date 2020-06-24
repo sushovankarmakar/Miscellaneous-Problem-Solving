@@ -1,0 +1,48 @@
+You are given head, the head node of a linked list containing unique integer values.
+
+You are also given an array A of M distinct integer , whose values are present in the linked list.
+
+Return the the head of linked list of all connected components in A , where two values are connected if they appear consecutively in the linked list.
+
+Input Format
+
+N
+
+N integers (linked list)
+
+M
+
+M integers(array A)
+
+Constraints
+
+1 <= N <= 100000
+
+0 <= data of linked list <= 10^9
+
+1 <= M <= N
+
+A[i] is also exists in linked list.
+
+Output Format
+
+Print all linked list which are returned each in a new line.
+
+Sample Input 0
+
+8
+0 1 2 5 4 3 6 7
+6
+0 1 4 3 5 7
+Sample Output 0
+
+0 1 
+5 4 3 
+7 
+Explanation 0
+
+0 and 1 are consecutive integers in the linked list and they are also present in array A so they form a connected component.
+
+Similarly 5 4 3 are consecutive integers in the linked list and they are also present in array A so they form a connected component.
+
+7 is also present in array A so it form a connected component with single node.
