@@ -1,0 +1,57 @@
+Find the Kth smallest alphabet in the range
+
+
+Problem Description
+Given a string S and 3 integers - L,R and K.
+
+L and R specifying the range in the string.
+
+You have to find the Kth smallest alphabet(lexicographically) in the range.
+
+There will be Q queries.
+
+Input format
+First line contains 2 integers N, Q - Length of string and queries respectively.
+
+Second line contains a string S of length N.
+
+Next Q lines contain 3 space separated integers L,R and K.
+
+Output format
+Print the Kth smallest alphabet
+
+Sample Input 1
+10 4
+
+helloworld
+
+1 4 2
+
+1 4 3
+
+1 10 9
+
+3 8 6
+
+Sample Output 1
+h
+
+l
+
+r
+
+w
+
+Explanation 1
+In the first query, the range contains 4 letters {h,e,l,l} and 2nd smallest being 'h' lexicographically.
+
+Constraints
+N <= 50000
+
+Q <= 50000
+
+1 <= L<=R <=N
+
+1 <= K <= (R-L+1)
+
+The string contains only lowercase english alphabet

@@ -1,0 +1,73 @@
+Find the amount and the friend who you have to repay the most
+
+
+Problem Description
+You are given friends’ names and the amount of money taken from them each time.
+
+Unfortunately, you only remember the 3 largest amounts of money taken from a particular friend.
+
+You have to find the amount of money and the friend who you have to repay the most.
+
+Input format
+First line contains T - Number of test cases.
+
+First line of each test case contains N - Number of times money is borrowed.
+
+Next N lines contain a string S and an integer M - The name of friend & the amount borrowed.
+
+Output format
+Print the friend's name and the amount of money that you have to pay him.
+
+If there is more than 1 friend satisfying the condition, print the name which is smallest(lexicographically).
+
+Sample Input 1
+2
+
+7
+
+John 100
+
+Elon 50
+
+Elon 200
+
+Elon 50
+
+John 150
+
+John 50
+
+Elon 100
+
+5
+
+Oliver 150
+
+Oliver 100
+
+Andy 200
+
+Andy 250
+
+Oliver 200
+
+Sample Output 1
+Elon 350
+
+Andy 450
+
+Explanation 1
+In the first test case the sum of the 3 largest amounts to John and Elon are 300 and 350 respectively so the amount you have to pay Elon is more.
+
+Constraints
+T <= 100
+
+N <= 50000
+
+1 <= M <= 1000000000
+
+1<= |S| <=10, |S|=Length of string
+
+S can contain both lowercase and uppercase characters
+
+Sum of lengths of string over all test cases <= 500000
