@@ -1,0 +1,45 @@
+There are n politicians numbered 1 to n in the TST party, these politicians are seated on seats connected by m bidirectional bridges. 
+Two politicians are said to be adjacent if their seats connected by a bridge. All of these politicians love cash. 
+Party Leader has an unlimited supply of two different types of currency cash and you have to give one type of currency to each politician. 
+These politicians are really grumpy, if any politician finds another politician on adjacent seat with the same type of currrency, 
+they leave the party and join the opposition party. It is guaranteed that there will be at least one path from one politician to another 
+and there are no multiple bridges between the same politicians.
+
+You have to distribute the cash in such a way that none of the politicians die. If it is possible to save all the politicians print "SAVED" else print "GONE".
+
+Input Format
+
+The first line contains one number denoting number of test cases The next line consist of two integers n and m. 
+The next m lines contain two integers a and b denoting a bridge between the politicians a and b.
+
+Constraints
+
+1<=T<=100 2≤n≤100 1≤m≤min(nC2,100000)
+
+Output Format
+
+Next T lines contains the answers i.e. "SAVED" if it's possible to save all the politicians are saved else "GONE" in a new line.(without quotes)
+
+Sample Input 0
+
+1
+5 4
+1 2
+2 3
+3 4
+4 5
+Sample Output 0
+
+SAVED
+Sample Input 1
+
+1
+5 5
+1 2
+2 3
+3 4
+4 5
+1 3
+Sample Output 1
+
+GONE
